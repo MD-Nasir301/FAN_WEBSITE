@@ -8,6 +8,7 @@ body {
   max-width: 180px;
   min-width: 180px;
   user-select: none;
+  background: #000;
 }
 .fan {
   width: 70%;
