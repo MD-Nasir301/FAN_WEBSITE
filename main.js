@@ -1,50 +1,36 @@
 let fanStart = gsap.to(".fan", {
-  rotation: 36100,
-  duration: 10,
+  rotation: 331000,
+  duration: 125,
   repeat: -1,
   ease: "none",
 });
 gsap.to(".logo-bg", {
   yoyo: true,
   duration: 3,
-  backgroundColor: "yellow",
+  backgroundColor: "#4bb1fff8",
   repeat: -1,
   ease: "none",
 });
 gsap.to(".logo-bg", {
-  duration: 10,
+  duration: 8,
   repeat: -1,
   ease: "none",
   rotation: 360,
-});
-gsap.to(".gd-b", {
-  duration: 1,
-  "--deg": "360deg",
-  rotation: 360,
-  repeat: -1,
-  yoyo: false,
-  ease: "none",
-});
-gsap.to(".child-div", {
-  duration: 1,
-  "--deg": "360deg",
-  rotation: -360,
-  repeat: -1,
-  yoyo: false,
-  ease: "none",
 });
 
 fanStart.pause();
 
-let suiweOff = document.querySelector(".offbtn");
-let suiweOn = document.querySelector(".onbtn");
+let buttonOff = document.querySelector(".offbtn");
+let bg = document.querySelector(".bg");
 
 document.querySelector(".onbtn").addEventListener("click", () => {
   fanStart.resume();
-  suiweOff.style.zIndex = "15";
+  buttonOff.style.zIndex = "15";
+  bg.style.opacity = "1"
 });
 
 document.querySelector(".offbtn").addEventListener("click", () => {
   fanStart.pause();
-  suiweOff.style.zIndex = "0";
+  buttonOff.style.zIndex = "0";
+    bg.style.opacity = "0"
 });

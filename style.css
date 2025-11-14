@@ -59,3 +59,14 @@ body {
   left: 65%;
   z-index: 1;
 }
+.bg {
+    position: absolute;
+    width: 71%;
+    height: 41%;
+      background: rgba(67, 200, 240, 0.5);
+    border-radius: 50%;
+    opacity: 0;;
+    top: 9.5%;
+    left: 14%;
+    z-index: -1;
+}
