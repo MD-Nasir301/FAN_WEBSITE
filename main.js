@@ -5,10 +5,41 @@ let fanStart = gsap.to(".fan", {
   ease: "none",
 });
 gsap.to(".logo-bg", {
-  backgroundColor: "yellow",
   yoyo: true,
   duration: 3,
+  backgroundColor: "yellow",
   repeat: -1,
+  ease: "none",
+});
+gsap.to(".logo-bg", {
+  duration: 10,
+  repeat: -1,
+  ease: "none",
+  rotation: 360,
+});
+gsap.to(".border", {
+  yoyo: true,
+  duration: 66,
+  borderColor: "#4205f8ff",
+  repeat: -1,
+  ease: "none",
+  rotation: 360,
+});
+
+gsap.to(".gd-b", {
+  duration: 1,
+  "--deg": "360deg",
+  rotation: 360,
+  repeat: -1,
+  yoyo: false,
+  ease: "none",
+});
+gsap.to(".child-div", {
+  duration: 1,
+  "--deg": "360deg",
+  rotation: -360,
+  repeat: -1,
+  yoyo: false,
   ease: "none",
 });
 
