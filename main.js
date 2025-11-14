@@ -17,15 +17,6 @@ gsap.to(".logo-bg", {
   ease: "none",
   rotation: 360,
 });
-gsap.to(".border", {
-  yoyo: true,
-  duration: 66,
-  borderColor: "#4205f8ff",
-  repeat: -1,
-  ease: "none",
-  rotation: 360,
-});
-
 gsap.to(".gd-b", {
   duration: 1,
   "--deg": "360deg",
