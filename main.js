@@ -1,6 +1,6 @@
 let fanStart = gsap.to(".fan", {
-  rotation: 360000,
-  duration: 100,
+  rotation: 36100,
+  duration: 10,
   repeat: -1,
   ease: "none",
 });
